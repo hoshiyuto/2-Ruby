@@ -1,0 +1,24 @@
+puts "計算をはじめます!"
+puts "何回繰り返しますか?"
+
+times = gets.to_i 
+i = 0
+
+while i != times do
+ puts "#{i+1}回目の計算"
+ puts "2つの値を入力してください"
+ value1 = gets.to_i
+ value2 = gets.to_i
+ puts "a=#{value1}"
+ puts "b=#{value2}"
+ 
+ puts "計算結果を出力します"
+ puts "#{value1}+#{value2}=#{value1+value2}"
+ puts "#{value1}-#{value2}=#{value1-value2}"
+ puts "#{value1}*#{value2}=#{value1*value2}"
+ puts "#{value1}/#{value2}=#{value1/value2}"
+
+ i += 1
+end
+
+puts "計算を終了します"
